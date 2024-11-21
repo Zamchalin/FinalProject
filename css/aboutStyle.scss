@@ -1,0 +1,51 @@
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: solid 30px $selectColor;
+
+  &__info {
+  }
+  &__title {
+    margin-bottom: 20px;
+    font-family: $MainFont;
+    font-size: 36px;
+    font-weight: 700;
+    letter-spacing: 0%;
+    color: $selectColor;
+  }
+  &__text {
+    font-family: $MainFont;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    color: $selectColor;
+  }
+}
+.adress {
+  font-family: $MainFont;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0%;
+  color: $selectColor;
+  text-align: center;
+  padding: 30px;
+}
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  &__info {
+    border-left: 5px solid $selectColor;
+    padding-left: 30px;
+  }
+
+  &__text {
+    font-family: $MainFont;
+    font-size: 24px;
+    font-weight: 400;
+    letter-spacing: 0%;
+    color: $selectColor;
+    list-style-type: square;
+  }
+}
