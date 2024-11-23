@@ -1,0 +1,242 @@
+[
+  {
+    "id": 1,
+    "type": "Электрогитары",
+    "name": "ROCKDALE Stars Black Limited Edition HSS BK",
+    "price": 12000,
+    "description": "ROCKDALE Stars все модели серии Stars созданы на базе легендарных и прошедших проверку временем инструментов.",
+    "image": "guitar/el1.jpg"
+  },
+  {
+    "id": 2,
+    "type": "Электрогитары",
+    "name": "IBANEZ GRGR131EX-BKF",
+    "price": 12000,
+    "description": "Электрогитара IBANEZ GRX70QA-TRB - это отличный выбор для начинающих гитаристов и тех, кто ищет доступный вариант с высоким качеством звука и функциональностью. ",
+    "image": "guitar/el2.jpg"
+  },
+  {
+    "id": 3,
+    "type": "Электрогитары",
+    "name": "IBANEZ GRX70QA-TRB",
+    "price": 20000,
+    "description": "Электрогитара IBANEZ GRX70QA-TRB - это отличный выбор для начинающих гитаристов и тех, кто ищет доступный вариант с высоким качеством звука и функциональностью. ",
+    "image": "guitar/el1.jpg"
+  },
+  {
+    "id": 4,
+    "type": "Электрогитары",
+    "name": "ROCKDALE Stars HSS BK",
+    "price": 25000,
+    "description": "ROCKDALE Stars все модели серии Stars созданы на базе легендарных и прошедших проверку временем инструментов.",
+    "image": "guitar/el4.jpg"
+  },
+  {
+    "id": 5,
+    "type": "Электрогитары",
+    "name": "IBANEZ GRGR221PA-AQB",
+    "price": 40000,
+    "description": "IBANEZ GRG121DX-WNF - это шестиструнная электрогитара линейки GRG. Цвет гитары - орех (Walnut Flat). ",
+    "image": "guitar/el5.jpg"
+  },
+  {
+    "id": 6,
+    "type": "Электрогитары",
+    "name": "IBANEZ GRG121DX-WNF",
+    "price": 60000,
+    "description": "IBANEZ GRG121DX-WNF - это шестиструнная электрогитара линейки GRG. Цвет гитары - орех (Walnut Flat). ",
+    "image": "guitar/el4.jpg"
+  },
+  {
+    "id": 7,
+    "type": "Электрогитары",
+    "name": "IBANEZ GRX40-BKN",
+    "price": 22000,
+    "description": "ОIBANEZ GRX40-BKN шестиструнная электрогитара из самой узнаваемой линейки Ibanez RG. ",
+    "image": "guitar/el1.jpg"
+  },
+  {
+    "id": 8,
+    "type": "Электрогитары",
+    "name": "IBANEZ GIO GRG170DX BKN",
+    "price": 12000,
+    "description": "Шестиструнная электрогитара IBANEZ GIO GRG170DX BN является популярным представителем гитар серии RG. ",
+    "image": "guitar/el10.jpg"
+  },
+  {
+    "id": 9,
+    "type": "Электрогитары",
+    "name": "ROCKDALE Stars HSS WH",
+    "price": 21000,
+    "description": "ROCKDALE Stars все модели серии Stars созданы на базе легендарных и прошедших проверку временем инструментов.",
+    "image": "guitar/el2.jpg"
+  },
+  {
+    "id": 10,
+    "type": "Электрогитары",
+    "name": "ROCKDALE Stars HSS BK",
+    "price": 3000,
+    "description": "ROCKDALE Stars все модели серии Stars созданы на базе легендарных и прошедших проверку временем инструментов",
+    "image": "guitar/el10.jpg"
+  },
+  {
+    "id": 11,
+    "type": "Басс гитары",
+    "name": "ROCKDALE Stars PB Bass Black",
+    "price": 12000,
+    "description": "ROCKDALE Stars PB Bass серия бас-гитар созданная по классическим канонам.ROCKDALE Stars все модели серии Stars созданы на базе легендарных и прошедших проверку временем инструментов.",
+    "image": "guitar/ba1.jpg"
+  },
+  {
+    "id": 12,
+    "type": "Басс гитары",
+    "name": "ROCKDALE Stars PB Bass White",
+    "price": 22000,
+    "description": "ROCKDALE Stars PB Bass серия бас-гитар созданная по классическим канонам.",
+    "image": "guitar/ba2.jpg"
+  },
+  {
+    "id": 13,
+    "type": "Басс гитары",
+    "name": "ROCKDALE Stars PB Bass White",
+    "price": 21000,
+    "description": "ROCKDALE Stars PB Bass серия бас-гитар созданная по классическим канонам. ",
+    "image": "guitar/ba1.jpg"
+  },
+  {
+    "id": 14,
+    "type": "Басс гитары",
+    "name": "ROCKDALE Stars JB Bass Black",
+    "price": 15500,
+    "description": "ROCKDALE Stars JB Bass серия бас-гитар созданная по классическим канонам",
+    "image": "guitar/ba4.jpg"
+  },
+  {
+    "id": 15,
+    "type": "Басс гитары",
+    "name": "IBANEZ TMB100-BK TALMAN BASS BLACK",
+    "price": 44000,
+    "description": "Четырехструнная бас-гитара IBANEZ TMB100-BK TALMAN BASS BLACK представляет собой прекрасный инструмент из серии классических бас-гитар Talman. ",
+    "image": "guitar/ba4.jpg"
+  },
+  {
+    "id": 16,
+    "type": "Басс гитары",
+    "name": "ROCKDALE Stars JB Bass White",
+    "price": 15000,
+    "description": "ROCKDALE Stars JB Bass серия бас-гитар созданная по классическим канонам.",
+    "image": "guitar/ba1.jpg"
+  },
+  {
+    "id": 17,
+    "type": "Басс гитары",
+    "name": "Fernandes RPB360 SW",
+    "price": 39900,
+    "description": "Fernandes RPB 360 бас-гитара. Корпус гитары выполнен из ольхи.",
+    "image": "guitar/ba1.jpg"
+  },
+  {
+    "id": 18,
+    "type": "Басс гитары",
+    "name": "Schecter SGR C-4 BASS WSN",
+    "price": 33000,
+    "description": "Благодаря оригинальной форме достигнут идеальный баланс между комфортом игры и качеством звучания бас-гитар Schecter SGR C-4 BASS.",
+    "image": "guitar/ba2.jpg"
+  },
+  {
+    "id": 19,
+    "type": "Басс гитары",
+    "name": "ТFENDER SQUIER Affinity 2021 Precision Bass PJ MN Black",
+    "price": 47000,
+    "description": "Squier Affinity Series Precision Bass PJ - это квинтэссенция легендарного дизайна и Фендеровского звука. ",
+    "image": "guitar/ba1.jpg"
+  },
+  {
+    "id": 20,
+    "type": "Басс гитары",
+    "name": "JACKSON PRO SPECTRA Bass SBP IV Caribbean Blue",
+    "price": 137200,
+    "description": "",
+    "image": "guitar/ba1.jpg"
+  },
+  {
+    "id": 21,
+    "type": "Акустические гитары",
+    "name": "YAMAHA F310",
+    "price": 20990,
+    "description": "YAMAHA F310 воплощает приверженность качеству дизайна и звучания, свойственному всем акустикам Yamaha, и объединяет эти достоинства в единое целое по непревзойденно доступной цене.",
+    "image": "guitar/ac1.jpg"
+  },
+  {
+    "id": 22,
+    "type": "Акустические гитары",
+    "name": "IBANEZ TCY10E-BK",
+    "price": 38000,
+    "description": "Концертная электроакустическая гитара IBANEZ TCY10E-BK - это отличный выбор для тех, кто ищет универсальный инструмент с качественным звуком и удобством игры. ",
+    "image": "guitar/ac2.jpg"
+  },
+  {
+    "id": 23,
+    "type": "Акустические гитары",
+    "name": "ROCKDALE Aurora D1 C BK",
+    "price": 8400,
+    "description": "Если вы ищете вашу первую акустическую гитару, ROCKDALE Aurora D1CBK станет для вас идеальным выбором.",
+    "image": "guitar/ac1.jpg"
+  },
+  {
+    "id": 24,
+    "type": "Акустические гитары",
+    "name": "VESTON F-38/BK",
+    "price": 8400,
+    "description": "VESTON F-38/BK - акустическая гитара в корпусе фолк отличного качества, доступная по демократичной цене.",
+    "image": "guitar/ac2.jpg"
+  },
+  {
+    "id": 25,
+    "type": "Акустические гитары",
+    "name": "BLUE LAVA Original Acoustic",
+    "price": 42000,
+    "description": "Компактная электроакустическая гитара BLUE LAVA Original Acoustic не наносит вреда окружающей среде и предоставляет вам возможность создать что-то действительно потрясающее. Отличное решение для начинающих и путешествующих музыкантов.",
+    "image": "guitar/ac1.jpg"
+  },
+  {
+    "id": 26,
+    "type": "Акустические гитары",
+    "name": "FLIGHT F-230C NA",
+    "price": 13400,
+    "description": "Представляем вам новинку 2015 года акустическую гитару с вырезом FLIGHT F230C.",
+    "image": "guitar/ac4.jpg"
+  },
+  {
+    "id": 27,
+    "type": "Акустические гитары",
+    "name": "CRAFTER D-7 /NC",
+    "price": 40800,
+    "description": "Гитара CRAFTER D 7/NC во многом похожа на популярную модель D 6 и отличается верхней декой, выполненной из массива красного кедра.",
+    "image": "guitar/ac1.jpg"
+  },
+  {
+    "id": 28,
+    "type": "Акустические гитары",
+    "name": "Belucci BC3820 SB(BS)",
+    "price": 3500,
+    "description": "Акустическая гитара Belucci BC3820C SB 38 дюймов (4/4), форма корпуса фолк с вырезом, 6 струн, 18 ладов, струны металл.",
+    "image": "guitar/ac10.jpg"
+  },
+  {
+    "id": 29,
+    "type": "Акустические гитары",
+    "name": "IBANEZ TCM50-GBO",
+    "price": 46000,
+    "description": "IBANEZ TCM50-GBO TALMAN необычный гибридный инструмент, электроакустическая гитара, оборудованная магнитным звукоснимателем Ibanez AP2 и предусилителем AEQ200M с регулятором громкости двухполосным эквалайзером. ",
+    "image": "guitar/ac2.jpg"
+  },
+  {
+    "id": 30,
+    "type": "Акустические гитары",
+    "name": "IBANEZ PF15ECE-NT",
+    "price": 38000,
+    "description": "Электроакустическая гитара IBANEZ PF15ECE-NT - это инструмент высокого качества, который обладает богатым и насыщенным звучанием.",
+    "image": "guitar/ac10.jpg"
+  }
+]

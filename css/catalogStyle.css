@@ -2,6 +2,7 @@
   padding-top: 30px;
   padding-bottom: 30px;
   background-color: #e25822;
+  height: 130px;
 }
 .catalog__title {
   display: flex;
@@ -84,7 +85,7 @@
 }
 .products .product {
   width: 300px;
-  border: 1px solid rgb(244, 244, 244);
+  border: 1px solid rgb(240, 240, 240);
   box-shadow: 17px 19px 24px 0px rgba(0, 0, 0, 0.13);
   padding: 10px 10px 20px 10px;
 }
@@ -101,14 +102,16 @@
   font-size: 20px;
   font-weight: 700;
   letter-spacing: 0%;
+  height: 50px;
 }
-.products .product__dexcription {
+.products .product__description {
   padding: 5px;
   border-radius: 10px;
   font-family: Mulish;
   font-size: 12px;
   font-weight: 400;
   letter-spacing: 0%;
+  height: 100px;
 }
 .products .product__price {
   padding: 5px;
@@ -130,6 +133,10 @@
   color: #fff;
   border: solid 1px rgb(244, 244, 244);
   transition: 0.3s;
+  cursor: pointer;
+}
+.products .product__button:active {
+  font-size: 11px;
 }
 .products .product__button:hover {
   color: #e25822;
