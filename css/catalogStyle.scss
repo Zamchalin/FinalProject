@@ -17,6 +17,10 @@
     text-align: left;
   }
 }
+.sort {
+  display: flex;
+  justify-content: flex-start;
+}
 .sort-panel {
   box-sizing: border-box;
   padding-top: 13px;
@@ -67,6 +71,28 @@
       flex-direction: column;
     }
     &__link {
+      font-family: $MainFont;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0%;
+      color: $selectColor;
+      transition: 0.3s;
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+  }
+  .sort__content {
+    margin-top: 20px;
+    display: flex;
+    gap: 10px;
+    background-color: #fff;
+    padding-top: 0;
+    padding-right: 16px;
+    padding-bottom: 16px;
+    padding-left: 16px;
+    flex-direction: column;
+    .sort__link {
       font-family: $MainFont;
       font-size: 12px;
       font-weight: 700;

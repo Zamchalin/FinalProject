@@ -23,36 +23,16 @@
         <a class="header__nav_link" href="about.html">О нас</a>
       </nav>
     </header>
-    <main class="about-main">
-      <section class="about-us center">
-        <img
-          class="about-us__image"
-          src="images/about_image.jpg"
-          alt="guitar"
-        />
-        <div class="about-as__info">
-          <h1 class="about-us__title">Мы любим музыку</h1>
-          <p class="about-us__text">
-            Мы единственный в городе специализированный магазин гитар. Вы можете
-            заказать инструмент или выбрать из представленного ассортимента.
-            Большой выбор струн и всего необходимого.
-          </p>
-        </div>
+    <main class="cart-main">
+      <section class="catalog center">
+        <h1 class="catalog__title">Корзина</h1>
       </section>
-      <h2 class="adress">Адрес</h2>
-      <div class="contacts center">
-        <script
-          type="text/javascript"
-          charset="utf-8"
-          async
-          src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Abc7af6296d90a39e2e7edfea4e7ddbb3b4df193f7b8181d457dcafd6a36e1d07&amp;width=699&amp;height=440&amp;lang=ru_RU&amp;scroll=true"
-        ></script>
-        <div class="contacts__info">
-          <ul>
-            <li class="contacts__text">Мокшан, Засечная 47б</li>
-            <li class="contacts__text">Телефон: 8 (365)-522-00-00</li>
-            <li class="contacts__text">Почта: guitar-shop@gmail.com</li>
-          </ul>
+      <div class="cart center">
+        <div class="cart__products center"></div>
+        <div class="cart__pay">
+          <h3 class="cart__pay_title">Общая сумма:</h3>
+          <p class="cart__pay_price"></p>
+          <button class="cart__pay_button">Оплатить</button>
         </div>
       </div>
     </main>
@@ -96,6 +76,7 @@
             alt=""
         /></a>
       </div>
+      <script src="js/cart.js"></script>
     </footer>
   </body>
 </html>

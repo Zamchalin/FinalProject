@@ -7,6 +7,7 @@ async function loadProducts() {
     allProducts = await response.json(); // Сохраняем все продукты в переменную
     displayProducts(allProducts); // Отображаем все продукты
     initializeFilters(); // Инициализация фильтров после загрузки
+    initializeSort();
     updateButtonStates();
   } catch (error) {
     console.error("Ошибка при загрузке данных:", error);
@@ -65,7 +66,7 @@ function displayProducts(products) {
 // Функция фильтрации продуктов
 function filterProductsByType(type) {
   return allProducts.filter(
-    (product) => (type === "Весь ассортимент") | (product.type === type)
+    (product) => type === "Весь ассортимент" || product.type === type
   );
 }
 
@@ -76,10 +77,11 @@ function initializeFilters() {
   filterLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
       event.preventDefault(); // Предотвращаем переход по ссылке
-      const selectedType = link.innerText; // Предположим, что у вас есть атрибут data-type у ссылки
+      const selectedType = link.innerText;
 
       const filteredProducts = filterProductsByType(selectedType);
-      displayProducts(filteredProducts); // Обновляем отображение с фильтрованными продуктами
+      displayProducts(filteredProducts);
+      updateButtonStates();
     });
   });
 }
@@ -100,5 +102,38 @@ function addToCart(product) {
   // Сохраняем обновленную корзину в LocalStorage
   localStorage.setItem("cart", JSON.stringify(cart));
 }
+
+function sortProductPlus(products) {
+  return products.slice().sort((a, b) => a.price - b.price); // Возвращаем отсортированный массив по возрастанию
+}
+
+function sortProductMinus(products) {
+  return products.slice().sort((a, b) => b.price - a.price); // Возвращаем отсортированный массив по убыванию
+}
+
+function initializeSort() {
+  const sortLinks = document.querySelectorAll(".sort__link");
+
+  sortLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault(); // Предотвращаем переход по ссылке
+      let sortedProducts = [];
+      console.log(event.target);
+      if (event.target.innerText === "По убыванию цены") {
+        sortedProducts = sortProductMinus([...allProducts]); // Клонируем массив, чтобы не изменять оригинал
+        displayProducts(sortedProducts);
+      } else if (event.target.innerText === "По увеличению цены") {
+        sortedProducts = sortProductPlus([...allProducts]);
+        displayProducts(sortedProducts); // Клонируем массив
+      } else if (event.target.innerText === "Без фильтра") {
+        displayProducts(allProducts);
+      }
+
+      // Показываем отсортированные продукты
+      updateButtonStates();
+    });
+  });
+}
+
 // Вызов функции для загрузки продуктов
 loadProducts();

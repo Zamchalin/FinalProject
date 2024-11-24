@@ -16,6 +16,11 @@
   text-align: left;
 }
 
+.sort {
+  display: flex;
+  justify-content: flex-start;
+}
+
 .sort-panel {
   box-sizing: border-box;
   padding-top: 13px;
@@ -73,6 +78,28 @@
   transition: 0.3s;
 }
 .sort-panel .filter__link:hover {
+  opacity: 0.5;
+}
+.sort-panel .sort__content {
+  margin-top: 20px;
+  display: flex;
+  gap: 10px;
+  background-color: #fff;
+  padding-top: 0;
+  padding-right: 16px;
+  padding-bottom: 16px;
+  padding-left: 16px;
+  flex-direction: column;
+}
+.sort-panel .sort__content .sort__link {
+  font-family: Mulish;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0%;
+  color: #e25822;
+  transition: 0.3s;
+}
+.sort-panel .sort__content .sort__link:hover {
   opacity: 0.5;
 }
 

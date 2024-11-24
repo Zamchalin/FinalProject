@@ -19,55 +19,87 @@
       /></a>
       <nav class="header__nav">
         <a class="header__nav_link" href="catalog.html">Каталог</a>
-        <a class="header__nav_link" href="#">Корзина</a>
+        <a class="header__nav_link" href="cart.html">Корзина</a>
         <a class="header__nav_link" href="about.html">О нас</a>
       </nav>
     </header>
     <main class="catalog-main">
       <section class="catalog center">
         <h1 class="catalog__title">Каталог товаров</h1>
-        <div class="sort-panel">
-          <details class="filter">
-            <summary class="filter__summary">
-              фильтр<svg
-                class="filter__svg"
-                width="15.000000"
-                height="10.000000"
-                viewBox="0 0 15 10"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink"
-              >
-                <desc>Created with Pixso.</desc>
-                <defs></defs>
-                <path
-                  id="Vector"
-                  d="M0.83 10L4.16 10C4.62 10 5 9.62 5 9.16C5 8.7 4.62 8.33 4.16 8.33L0.83 8.33C0.37 8.33 0 8.7 0 9.16C0 9.62 0.37 10 0.83 10ZM0 0.83C0 1.29 0.37 1.66 0.83 1.66L14.16 1.66C14.62 1.66 15 1.29 15 0.83C15 0.37 14.62 0 14.16 0L0.83 0C0.37 0 0 0.37 0 0.83ZM0.83 5.83L9.16 5.83C9.62 5.83 10 5.45 10 5C10 4.54 9.62 4.16 9.16 4.16L0.83 4.16C0.37 4.16 0 4.54 0 5C0 5.45 0.37 5.83 0.83 5.83Z"
-                  fill="#000000"
-                  fill-opacity="1.000000"
-                  fill-rule="nonzero"
-                ></path>
-              </svg>
-            </summary>
-            <div class="filter__content">
-              <a class="filter__link" href="#">Весь ассортимент</a>
-              <a class="filter__link" href="#">Электрогитары</a>
-              <a class="filter__link" href="#">Басс гитары</a>
-              <a class="filter__link" href="#">Акустические гитары</a>
-            </div>
-          </details>
+        <div class="sort">
+          <div class="sort-panel">
+            <details class="filter">
+              <summary class="filter__summary">
+                фильтр<svg
+                  class="filter__svg"
+                  width="15.000000"
+                  height="10.000000"
+                  viewBox="0 0 15 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <desc>Created with Pixso.</desc>
+                  <defs></defs>
+                  <path
+                    id="Vector"
+                    d="M0.83 10L4.16 10C4.62 10 5 9.62 5 9.16C5 8.7 4.62 8.33 4.16 8.33L0.83 8.33C0.37 8.33 0 8.7 0 9.16C0 9.62 0.37 10 0.83 10ZM0 0.83C0 1.29 0.37 1.66 0.83 1.66L14.16 1.66C14.62 1.66 15 1.29 15 0.83C15 0.37 14.62 0 14.16 0L0.83 0C0.37 0 0 0.37 0 0.83ZM0.83 5.83L9.16 5.83C9.62 5.83 10 5.45 10 5C10 4.54 9.62 4.16 9.16 4.16L0.83 4.16C0.37 4.16 0 4.54 0 5C0 5.45 0.37 5.83 0.83 5.83Z"
+                    fill="#000000"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  ></path>
+                </svg>
+              </summary>
+              <div class="filter__content">
+                <a class="filter__link" href="#">Весь ассортимент</a>
+                <a class="filter__link" href="#">Электрогитары</a>
+                <a class="filter__link" href="#">Басс гитары</a>
+                <a class="filter__link" href="#">Акустические гитары</a>
+              </div>
+            </details>
+          </div>
+          <div class="sort-panel">
+            <details class="filter">
+              <summary class="filter__summary">
+                Сортировка<svg
+                  class="filter__svg"
+                  width="15.000000"
+                  height="10.000000"
+                  viewBox="0 0 15 10"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                  xmlns:xlink="http://www.w3.org/1999/xlink"
+                >
+                  <desc>Created with Pixso.</desc>
+                  <defs></defs>
+                  <path
+                    id="Vector"
+                    d="M0.83 10L4.16 10C4.62 10 5 9.62 5 9.16C5 8.7 4.62 8.33 4.16 8.33L0.83 8.33C0.37 8.33 0 8.7 0 9.16C0 9.62 0.37 10 0.83 10ZM0 0.83C0 1.29 0.37 1.66 0.83 1.66L14.16 1.66C14.62 1.66 15 1.29 15 0.83C15 0.37 14.62 0 14.16 0L0.83 0C0.37 0 0 0.37 0 0.83ZM0.83 5.83L9.16 5.83C9.62 5.83 10 5.45 10 5C10 4.54 9.62 4.16 9.16 4.16L0.83 4.16C0.37 4.16 0 4.54 0 5C0 5.45 0.37 5.83 0.83 5.83Z"
+                    fill="#000000"
+                    fill-opacity="1.000000"
+                    fill-rule="nonzero"
+                  ></path>
+                </svg>
+              </summary>
+              <div class="sort__content">
+                <a class="sort__link" href="#">По увеличению цены</a>
+                <a class="sort__link" href="#">По убыванию цены</a>
+                <a class="sort__link" href="#">Без фильтра</a>
+              </div>
+            </details>
+          </div>
         </div>
       </section>
       <div class="products center"></div>
     </main>
     <footer class="footer center">
       <span class="footer__copyright">© 2024 Магазин Гитар</span>
-      <div class="footer__info">
+      <nav class="footer__info">
         <a class="footer__info_link" href="index.html">Главная страница</a>
         <a class="footer__info_link" href="catalog.html">Каталог</a>
-        <a class="footer__info_link" href="#">Корзина</a>
-        <a class="footer__info_link" href="#">О нас</a>
-      </div>
+        <a class="footer__info_link" href="cart.html">Корзина</a>
+        <a class="footer__info_link" href="about.html">О нас</a>
+      </nav>
       <div class="social_icons">
         <a href="#"
           ><img
@@ -101,6 +133,6 @@
         /></a>
       </div>
     </footer>
-    <script src="js/catalogPush.js"></script>
+    <script src="js/catalog.js"></script>
   </body>
 </html>
