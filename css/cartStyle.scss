@@ -11,6 +11,7 @@
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
     width: 70vw;
+    margin-bottom: 75px;
   }
   &__product {
     display: flex;
@@ -114,4 +115,6 @@
       }
     }
   }
+}
+@media (max-width: 1024px) {
 }

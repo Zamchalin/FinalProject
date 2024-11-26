@@ -1,9 +1,9 @@
 @import "vars";
 .catalog {
-  padding-top: 30px;
+  padding-top: 14px;
   padding-bottom: 30px;
-  background-color: $selectColor;
-  height: 130px;
+  background-color: #e25822;
+  height: 113px;
 
   &__title {
     display: flex;
@@ -171,6 +171,50 @@
         color: $selectColor;
         background-color: #fff;
         border: solid 1px $selectColor;
+      }
+    }
+  }
+}
+@media (max-width: 1024px) {
+  .products {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 450px) {
+  .products {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    justify-items: center;
+    gap: 10px;
+    .product {
+      width: 250px;
+
+      &__name {
+        padding: 5px;
+        border-radius: 10px;
+        font-family: $MainFont;
+        font-size: 16px;
+        font-weight: 600;
+      }
+      &__description {
+        padding: 5px;
+        border-radius: 10px;
+        font-family: $MainFont;
+        font-size: 10px;
+        font-weight: 300;
+        letter-spacing: 0%;
+        height: 80px;
+      }
+      &__price {
+        font-size: 14px;
       }
     }
   }
