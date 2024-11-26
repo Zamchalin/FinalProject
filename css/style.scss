@@ -168,6 +168,9 @@ img {
   }
 }
 @media (max-width: 1024px) {
+  .fixed {
+    position: static;
+  }
   .center {
     padding-left: calc(50% - 367px);
     padding-right: calc(50% - 367px);
