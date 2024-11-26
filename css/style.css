@@ -329,7 +329,7 @@
   .products .product__description {
     font-size: 10px;
     font-weight: 300;
-    height: 50px;
+    height: 70px;
   }
   .products .product__price {
     font-size: 14px;
@@ -738,7 +738,7 @@
     font-weight: 400;
   }
 }
-@media (max-width: 1024px) {
+@media (max-width: 770px) {
   .product-page {
     display: flex;
     flex-direction: column;
