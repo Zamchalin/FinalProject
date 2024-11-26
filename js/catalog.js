@@ -37,9 +37,11 @@ function displayProducts(products) {
     card.innerHTML = `
     <img class="product__img" src="${product.image}" alt="el1" />
           <div class="product__info">
-            <h3 class="product__name">
+          <a class = "product__link" href="product.html">
+            <h3 class="product__name" >
               ${product.name}
             </h3>
+            </a>
             <p class="product__description">
               ${product.description}
             </p>
@@ -118,7 +120,7 @@ function initializeSort() {
     link.addEventListener("click", (event) => {
       event.preventDefault(); // Предотвращаем переход по ссылке
       let sortedProducts = [];
-      console.log(event.target);
+
       if (event.target.innerText === "По убыванию цены") {
         sortedProducts = sortProductMinus([...allProducts]); // Клонируем массив, чтобы не изменять оригинал
         displayProducts(sortedProducts);
@@ -131,6 +133,15 @@ function initializeSort() {
 
       // Показываем отсортированные продукты
       updateButtonStates();
+    });
+  });
+}
+function openProduct() {
+  const product_linkEls = document.querySelectorAll(".product__link");
+  console.log(product_linkEls);
+  product_linkEls.forEach((link) => {
+    link.addEventListener("click", function (e) {
+      console.log(e.target);
     });
   });
 }
