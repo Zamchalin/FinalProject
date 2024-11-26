@@ -1,5 +1,128 @@
-.contacts {
+.about-us {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  border-bottom: solid 30px #e25822;
+}
+.about-us__title {
+  margin-bottom: 20px;
+  font-family: Mulish;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0%;
+  color: #e25822;
+}
+.about-us__text {
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  color: #e25822;
+}
+
+.adress {
+  font-family: Mulish;
+  font-size: 36px;
+  font-weight: 700;
+  letter-spacing: 0%;
+  color: #e25822;
+  text-align: center;
+  padding: 30px;
+}
+
+.contacts {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+}
+.contacts .map_for_phone {
+  display: none;
+}
+.contacts__info {
+  border-left: 5px solid #e25822;
+  padding-left: 30px;
+}
+.contacts__text {
+  font-family: Mulish;
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 0%;
+  color: #e25822;
+  list-style-type: square;
+}
+
+@media (max-width: 1024px) {
+  .about-us__image {
+    width: 300px;
+  }
+  .about-us__title {
+    margin-bottom: 10px;
+    font-size: 26px;
+  }
+  .about-us__text {
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .adress {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .contacts {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+  }
+  .contacts__info {
+    border-left: 5px solid #e25822;
+    padding-left: 30px;
+  }
+  .contacts__text {
+    font-size: 14px;
+    font-weight: 400;
+    list-style-type: square;
+  }
+}
+@media (max-width: 450px) {
+  .about-us {
+    flex-direction: column;
+    align-items: center;
+  }
+  .about-us__image {
+    width: 300px;
+  }
+  .about-us__title {
+    margin-bottom: 10px;
+    font-size: 26px;
+    text-align: center;
+  }
+  .about-us__text {
+    font-size: 16px;
+    font-weight: 500;
+    text-align: center;
+  }
+  .adress {
+    font-size: 30px;
+    font-weight: 600;
+  }
+  .contacts {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+  .contacts .map_for_phone {
+    display: block;
+  }
+  .contacts .map {
+    display: none;
+  }
+  .contacts__info {
+    border-left: 5px solid #e25822;
+    padding-left: 30px;
+    margin-bottom: 50px;
+  }
+  .contacts__text {
+    font-size: 14px;
+    font-weight: 400;
+    list-style-type: square;
+  }
 }/*# sourceMappingURL=aboutStyle.css.map */

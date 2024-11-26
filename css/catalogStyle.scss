@@ -198,20 +198,13 @@
       width: 250px;
 
       &__name {
-        padding: 5px;
-        border-radius: 10px;
-        font-family: $MainFont;
         font-size: 16px;
         font-weight: 600;
       }
       &__description {
-        padding: 5px;
-        border-radius: 10px;
-        font-family: $MainFont;
         font-size: 10px;
         font-weight: 300;
-        letter-spacing: 0%;
-        height: 80px;
+        height: 50px;
       }
       &__price {
         font-size: 14px;
