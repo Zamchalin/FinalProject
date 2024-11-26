@@ -10,9 +10,11 @@ function displayProducts(products) {
     card.innerHTML = `
       <img class="cart__product_img" src="${product.image}" alt="el1" />
       <div class="cart__product_info">
+       <a  class = "product__link"  href="product.html?id=${product.id}">
         <h3 class="cart__product_name">
           ${product.name}
         </h3>
+        </a>
         <p class="cart__product_description">
           ${product.description}
         </p>
