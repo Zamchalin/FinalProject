@@ -74,5 +74,4 @@ function addToCart(product) {
   localStorage.setItem("cart", JSON.stringify(cart)); // Сохранение обновленной корзины
 }
 
-// Вызов функции для загрузки деталей товара
 loadProductDetails();

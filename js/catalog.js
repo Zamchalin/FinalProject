@@ -7,14 +7,13 @@ async function loadProducts() {
     allProducts = await response.json(); // Сохраняем все продукты в переменную
     displayProducts(allProducts); // Отображаем все продукты
     initializeFilters(); // Инициализация фильтров после загрузки
-    initializeSort();
+    initializeSort(); // Инициализация сортировки  после загрузки
     updateButtonStates();
   } catch (error) {
     console.error("Ошибка при загрузке данных:", error);
   }
 }
 function updateButtonStates() {
-  // Получаем корзину из localStorage
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
 
   cart.forEach((cartItem) => {
@@ -65,20 +64,18 @@ function displayProducts(products) {
   });
 }
 
-// Функция фильтрации продуктов
 function filterProductsByType(type) {
   return allProducts.filter(
     (product) => type === "Весь ассортимент" || product.type === type
   );
 }
 
-// Инициализация фильтров
 function initializeFilters() {
   const filterLinks = document.querySelectorAll(".filter__link");
 
   filterLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
-      event.preventDefault(); // Предотвращаем переход по ссылке
+      event.preventDefault();
       const selectedType = link.innerText;
 
       const filteredProducts = filterProductsByType(selectedType);
@@ -93,13 +90,9 @@ function addToCart(product) {
 
   // Проверяем, есть ли уже товар в корзине
   const existingProduct = cart.find((item) => item.id === product.id);
-  if (existingProduct) {
-    // Если товар уже есть, увеличиваем его количество
-    existingProduct.quantity += 1;
-  } else {
-    // Если товара нет, добавляем новый объект товара
-    cart.push({ ...product, quantity: 1 });
-  }
+
+  // Если товара нет, добавляем новый объект товара
+  cart.push({ ...product, quantity: 1 });
 
   // Сохраняем обновленную корзину в LocalStorage
   localStorage.setItem("cart", JSON.stringify(cart));
@@ -131,11 +124,9 @@ function initializeSort() {
         displayProducts(allProducts);
       }
 
-      // Показываем отсортированные продукты
       updateButtonStates();
     });
   });
 }
 
-// Вызов функции для загрузки продуктов
 loadProducts();
