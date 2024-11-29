@@ -1,3 +1,7 @@
+let allProducts = [];
+let currentFilterType = "Весь ассортимент";
+let currentSortOrder = "Без фильтра";
+
 async function loadProducts() {
   try {
     const response = await fetch("../data.json");
@@ -12,6 +16,13 @@ async function loadProducts() {
   } catch (error) {
     console.error("Ошибка при загрузке данных:", error);
   }
+}
+
+function updateProductsDisplay() {
+  let filteredProducts = filterProductsByType(currentFilterType);
+  let sortedProducts = sortProducts(filteredProducts, currentSortOrder);
+  displayProducts(sortedProducts);
+  updateButtonStates();
 }
 function updateButtonStates() {
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -70,20 +81,6 @@ function filterProductsByType(type) {
   );
 }
 
-function initializeFilters() {
-  const filterLinks = document.querySelectorAll(".filter__link");
-
-  filterLinks.forEach((link) => {
-    link.addEventListener("click", (event) => {
-      event.preventDefault();
-      const selectedType = link.innerText;
-
-      const filteredProducts = filterProductsByType(selectedType);
-      displayProducts(filteredProducts);
-      updateButtonStates();
-    });
-  });
-}
 function addToCart(product) {
   // Получаем текущую корзину из LocalStorage
   const cart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -97,13 +94,26 @@ function addToCart(product) {
   // Сохраняем обновленную корзину в LocalStorage
   localStorage.setItem("cart", JSON.stringify(cart));
 }
-
-function sortProductPlus(products) {
-  return products.slice().sort((a, b) => a.price - b.price); // Возвращаем отсортированный массив по возрастанию
+function sortProducts(products, order) {
+  let sortedProducts = [...products];
+  if (order === "По увеличению цены") {
+    sortedProducts.sort((a, b) => a.price - b.price);
+  } else if (order === "По убыванию цены") {
+    sortedProducts.sort((a, b) => b.price - a.price);
+  }
+  return sortedProducts;
 }
 
-function sortProductMinus(products) {
-  return products.slice().sort((a, b) => b.price - a.price); // Возвращаем отсортированный массив по убыванию
+function initializeFilters() {
+  const filterLinks = document.querySelectorAll(".filter__link");
+
+  filterLinks.forEach((link) => {
+    link.addEventListener("click", (event) => {
+      event.preventDefault();
+      currentFilterType = link.innerText;
+      updateProductsDisplay(); // Обновление списка продуктов
+    });
+  });
 }
 
 function initializeSort() {
@@ -111,20 +121,9 @@ function initializeSort() {
 
   sortLinks.forEach((link) => {
     link.addEventListener("click", (event) => {
-      event.preventDefault(); // Предотвращаем переход по ссылке
-      let sortedProducts = [];
-
-      if (event.target.innerText === "По убыванию цены") {
-        sortedProducts = sortProductMinus([...allProducts]); // Клонируем массив, чтобы не изменять оригинал
-        displayProducts(sortedProducts);
-      } else if (event.target.innerText === "По увеличению цены") {
-        sortedProducts = sortProductPlus([...allProducts]);
-        displayProducts(sortedProducts); // Клонируем массив
-      } else if (event.target.innerText === "Без фильтра") {
-        displayProducts(allProducts);
-      }
-
-      updateButtonStates();
+      event.preventDefault();
+      currentSortOrder = event.target.innerText;
+      updateProductsDisplay(); // Обновление списка продуктов
     });
   });
 }
